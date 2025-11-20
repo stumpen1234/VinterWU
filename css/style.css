@@ -7,18 +7,32 @@ body{
 #container{
     display:grid;
     height:100vh;
-    grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap:5px;
+    grid-template-columns: 1fr 50vw 1fr;
+    grid-template-rows: 50px 20vh 1fr 70px;
     grid-template-areas: 
-    "nav nav nav"
+    "lg nav nav"
     "hd hd hd"
     "as mn as2"
     "ft ft ft"
     ;
 }
 nav{
+    padding-right:20rem;
+    display:flex;
     grid-area:nav;
-    background-color:aqua
+    background-color:white;
+    justify-content:flex-end;
+    align-items: center;
+    
+}
+#logo{
+    grid-area:lg;
+}
+.icon{
+    height:30px;
+    width:30px;
+    margin:10px;
 }
 header{
     grid-area:hd;
