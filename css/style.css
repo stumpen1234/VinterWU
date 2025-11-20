@@ -1,0 +1,42 @@
+
+body{
+    margin:0px;
+}
+
+
+#container{
+    display:grid;
+    height:100vh;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "nav nav nav"
+    "hd hd hd"
+    "as mn as2"
+    "ft ft ft"
+    ;
+}
+nav{
+    grid-area:nav;
+    background-color:aqua
+}
+header{
+    grid-area:hd;
+    background-color:antiquewhite
+}
+main{
+    grid-area:mn;
+    background-color:black
+}
+.aside{
+    grid-area:as;
+    background-color:blue
+}   
+.aside2{
+    grid-area:as2;
+    background-color:blue
+}
+footer{
+    grid-area:ft;
+    background-color:black
+}
