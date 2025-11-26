@@ -9,7 +9,7 @@ body{
     height:100vh;
     gap:5px;
     grid-template-columns: 1fr 50vw 1fr;
-    grid-template-rows: 50px 20vh 1fr 70px;
+    grid-template-rows: 50px 20vh 70vh 70px;
     grid-template-areas: 
     "lg nav nav"
     "hd hd hd"
@@ -28,6 +28,8 @@ nav{
 }
 #logo{
     grid-area:lg;
+    display: flex;
+    flex: shrink 1;
 }
 .icon{
     height:30px;
