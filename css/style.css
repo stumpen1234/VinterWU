@@ -4,11 +4,12 @@ body{
 }
 
 
+
 #container{
     display:grid;
     height:100vh;
     grid-template-columns: 20vw 1fr;
-    grid-template-rows: 10vh 20vh 5vh 60vh 5vh 30vh 70px;
+    grid-template-rows: 10vh 40vh 5vh 60vh 5vh 60vh 70px;
     grid-template-areas: 
     "lg nav "
     "hd hd "
@@ -20,7 +21,8 @@ body{
     ;
 }
 nav{
-    padding-right:20rem;
+    padding-right:2rem;
+    gap:10px;
     display:flex;
     grid-area:nav;
     background-color:white;
@@ -46,27 +48,30 @@ header{
     background-color:#c0392b;
 }
 #header{
-    width:50%;
-    height:20vh ;
+    width:60%;
+    height:40vh ;
     
 }
 main{
+    display:none;
+    padding-top:10px;
+    padding-bottom:10px;
+    gap:30px;
     grid-area:mn;
     background-color:#c0392b;
     display:flex;
     flex-direction: row;
-    overflow-x: auto;
-    overflow-y: hidden; 
+    overflow-x: scroll;
+    overflow-y: hidden;
     justify-content: space-around;  
     align-items: center;
 }
 .auction{
     background-color: white;
     padding: 10px;
-    
+
     display: flex;
     flex-direction: column;
-    height:55vh;
     
     
 }
@@ -79,22 +84,35 @@ p{
     font-size:2rem;
 }
 .aside{
-    display:flex;
+    display:none;
+    padding-top:10px;
+    padding-bottom:10px;
+    gap:30px;
     grid-area:as;
-    background-color:white;
-    flex-direction:row; 
+    background-color:#c0392b;
+    display:flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    justify-content: space-around;  
+    align-items: center;
+
 
 }  
 .seperator1{
+    display:flex;
     grid-area:sep1;
-    background-color:black
-    ;
+    background-color:white;
+    text-align: center;
+    justify-content: center;
 
 } 
 .seperator2{
+    display:flex;
     grid-area:sep2;
-    background-color:black
-    ;
+    background-color:white;
+    text-align: center;
+    justify-content: center;
 }
 footer{
     grid-area:ft;
