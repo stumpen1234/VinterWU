@@ -8,7 +8,7 @@ body{
     display:grid;
     height:100vh;
     grid-template-columns: 36vw 1fr;
-    grid-template-rows: 10vh 40vh 60vh fit-content ;
+    grid-template-rows: 10vh 40vh 60vh fit-content 200px;
     grid-template-areas: 
     "lg nav"
     "hd hd"
@@ -57,7 +57,7 @@ header{
     
 }
 .intro{
-    background-color: #a93023;
+    background-color: #c0392b;
     grid-area:in;
     display:flex;
     flex-direction: column;
@@ -69,11 +69,12 @@ header{
 
 }
 .introduction{
-    border: 3px solid black;
+    border: 6px solid black;
     border-radius: 1rem;
+    background-color: white;
 }
 main{
-background-color: #7f251a;
+background-color: #c0392b;
 gap:100px;
 align-items:center;
 justify-content: center;
@@ -87,16 +88,19 @@ grid-template-areas:
 "b3 b4";
 }
 .buttons{
+    border-radius: 5rem;
+    padding-top:1rem;
+    padding-bottom:1rem;
     justify-content: center;
     align-items: center;
-    background-color:#a93023;
+    background-color:white;
     display: flex;
     flex-direction: column;
     grid-area: bt;
     
 }
 #box1{
-    background-color:#a93023;
+    background-color:white;
     display: flex;
     flex-direction: column;
   grid-area:b1;
@@ -105,7 +109,7 @@ grid-template-areas:
 }
 #box2{ 
 
-    background-color:#a93023;
+    background-color:white;
     display: flex;
     flex-direction: column;
     grid-area:b2;
@@ -114,7 +118,7 @@ grid-template-areas:
 }
 #box3{
  
-    background-color:#a93023;
+    background-color:white;
     display: flex;
     flex-direction: column;
     grid-area: b3;
@@ -124,7 +128,7 @@ grid-template-areas:
 }
 #box4{
 
-    background-color:#a93023;
+    background-color:white;
     display: flex;
     flex-direction: column;
     grid-area:b4;
@@ -137,6 +141,7 @@ grid-template-areas:
 }
 .box{
     font-size: 3rem;
+    background-color: white;
 }
  
 footer{
@@ -152,6 +157,7 @@ h3{
 }
 .text{
     font-size:2rem;
+    background-color: white;
     
 }
 
@@ -173,4 +179,7 @@ p {
     margin:0px;
     font-size:2rem;
     border-radius: 1rem;
+}
+a{
+    text-decoration: none;
 }

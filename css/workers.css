@@ -1,0 +1,67 @@
+body{
+    margin:0px;
+    
+}
+
+
+#container{
+    display:grid;
+    height:100vh;
+    grid-template-columns: 36vw 1fr;
+    grid-template-rows: 10vh 20vh;
+    grid-template-areas: 
+    "lg nav"
+    "hd hd"
+
+     
+   
+    
+}
+
+
+nav{
+    padding-right:2rem;
+    gap:10px;
+    display:flex;
+    grid-area:nav;
+    background-color:white;
+    justify-content:flex-end;
+    align-items: center;
+    
+}
+
+#logo{
+    grid-area:lg;
+    display: flex;
+    flex: shrink 1;
+}
+.icon{
+    height:30px;
+    width:30px;
+    margin:10px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area:hd;
+    background-color:#c0392b;
+}
+#header{
+    width:60%;
+    height:40vh ;
+    
+}
+
+
+
+
+p {
+    margin:0px;
+    font-size:2rem;
+    border-radius: 1rem;
+}
+a{
+    text-decoration: none;
+}
