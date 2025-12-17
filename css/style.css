@@ -8,7 +8,7 @@ body{
     display:grid;
     height:100vh;
     grid-template-columns: 36vw 1fr;
-    grid-template-rows: 10vh 40vh 60vh fit-content 200px;
+    grid-template-rows: 10vh 40vh 60vh 170vh 200px;
     grid-template-areas: 
     "lg nav"
     "hd hd"
@@ -33,15 +33,31 @@ nav{
 }
 
 #logo{
+    justify-content:flex-start;
+    align-items: center;
     grid-area:lg;
     display: flex;
-    flex: shrink 1;
+
 }
 
 .icon{
     height:30px;
     width:30px;
     margin:10px;
+}
+.squares{
+    height:5rem;
+    width:5rem;
+    margin:10px;
+}
+.button:hover{
+    transform: translateY(-2px);
+    box-shadow: 0px 8px 15px 0px rgb(0, 0, 0);
+    
+}
+.button{
+    display:inline-flex;
+    border-radius: 10px;
 }
 
 header{
@@ -181,5 +197,6 @@ p {
     border-radius: 1rem;
 }
 a{
+    color:black;
     text-decoration: none;
 }
