@@ -14,7 +14,7 @@ body{
     display:grid;
     height:100vh;
     grid-template-columns: 20vw 1fr 20vw;
-    grid-template-rows:7vh 7rem 32rem 15vh 170px;
+    grid-template-rows:7vh 7rem 32rem 15vh 100px;
     grid-template-areas: 
     "lg nav nav"
     "hd hd hd"
@@ -64,9 +64,14 @@ header{
     grid-area:hd;
     background-color:#c0392b;
 }
+.head{
+    background-color: white;
+    border-radius: 10px;
+}
 #header{
     width:60%;
     height:40vh ;
+    
     
 }
 main{
@@ -128,6 +133,7 @@ main{
     grid-area:sp;
 }
 footer{
+    font-family: "caveat",cursive;
     justify-content: space-around;
     display: flex;
     flex-direction: row;
@@ -139,6 +145,7 @@ h3{
     font-size:3rem;
 }
 h2{
+    font-family: "Meie Script", cursive;
     background-color: white;
     border-radius: 10px;
     font-size: 2rem;

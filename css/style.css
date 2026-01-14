@@ -8,7 +8,7 @@ body{
     display:grid;
     height:100vh;
     grid-template-columns: 36vw 1fr;
-    grid-template-rows: 10vh 40vh 60vh 170vh 200px;
+    grid-template-rows: 10vh 40vh 60vh 170vh 100px;
     grid-template-areas: 
     "lg nav"
     "hd hd"
@@ -161,6 +161,7 @@ grid-template-areas:
 }
  
 footer{
+    font-family: "caveat",cursive;
     justify-content: space-around;
     display: flex;
     flex-direction: row;

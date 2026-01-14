@@ -15,7 +15,7 @@ body{
     display:grid;
     height:100vh;
     grid-template-columns: 36vw 1fr;
-    grid-template-rows: 10vh 40vh 5vh 60vh 5vh 60vh 170px;
+    grid-template-rows: 10vh 40vh 5vh 60vh 5vh 60vh 100px;
     grid-template-areas: 
     "lg nav "
     "hd hd "
@@ -91,7 +91,7 @@ main{
     border: #c0392b;
 }
 .painting{
-    height:40vh;
+    height:35vh;
     width:fit-content;
     border-radius: 1rem;
 }
@@ -141,6 +141,7 @@ p{
     justify-content: center;
 }
 footer{
+    font-family: "caveat",cursive;
     justify-content: space-around;
     display: flex;
     flex-direction: row;
